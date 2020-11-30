@@ -6,7 +6,7 @@ LABEL \
     email="wangshx@shanghaitech.edu.cn" \
     description="Docker Image for Sigflow" \
     org.label-schema.license="Academic Free License v.3.0" \
-    org.label-schema.vcs-url="https://github.com/PalashPandey/sigflow/" \
+    org.label-schema.vcs-url="https://github.com/ShixiangWang/sigflow/" \
     org.label-schema.vendor="XSLiu Lab Project"
 
 ## Install system dependencies
@@ -40,7 +40,7 @@ WORKDIR /root
 ## When ENTRYPOINT is used, the docker can be only run as a command 
 ## unless specify --entrypoint /bin/bash to access docker terminal
 ## see: https://phoenixnap.com/kb/docker-run-override-entrypoint
-## sudo docker run -it --rm --entrypoint bash PalashPandey/sigflow
+## sudo docker run -it --rm --entrypoint bash shixiangwang/sigflow
 ENTRYPOINT [ "sigflow" ]
 CMD [ "--help" ]
 ## Can entrypoint directly input outside files?
